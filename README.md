@@ -1,29 +1,33 @@
-# LMS - Library Management System
+# Library Management System (LMS) in Core Java
 
-This repository contains a simple Library Management System (LMS) developed in PHP and MySQL. It provides basic functionalities for managing books, members, and transactions within a library.
+This project implements a simple Library Management System (LMS) using Core Java. It allows users to manage books, including adding, removing, searching, borrowing, returning, and viewing available books.
 
-## Features
+## Project Overview
 
-* **Book Management:**
-    * Add new books with details like title, author, ISBN, and publication.
-    * View and search for books.
-    * Update book information.
-    * Delete books.
-* **Member Management:**
-    * Register new members with personal details.
-    * View and search for members.
-    * Update member information.
-    * Delete members.
-* **Transaction Management:**
-    * Issue books to members.
-    * Return books.
-    * Track book issue and return history.
-    * Find the fine of late returns.
-* **Database Driven:**
-    * Uses MySQL for data storage.
-    * Database connection details are configured in the code.
-* **Simple User Interface:**
-    * Basic HTML and PHP-based interface.
+The Library Management System provides the following functionalities:
+
+-   **Add New Books:** Add new book entries to the library.
+-   **Remove Books:** Remove existing book entries from the library.
+-   **Search for Books:** Search for books based on title or author.
+-   **Borrow Books:** Allow users to borrow available books.
+-   **Return Books:** Allow users to return borrowed books.
+-   **View All Available Books:** Display a list of all books currently available in the library.
+
+## Class Structure
+
+The project consists of three main classes:
+
+-   **`Book`:**
+    -      Represents a single book in the library.
+    -      Attributes: `title`, `author`, `isbn`, `isBorrowed`.
+    -   Methods: getters and setters for attributes, `toString()` method.
+-   **`Library`:**
+    -      Manages the collection of `Book` objects.
+    -      Attributes: `books` (an `ArrayList` of `Book` objects).
+    -      Methods: `addBook()`, `removeBook()`, `searchBook()`, `borrowBook()`, `returnBook()`, `viewAvailableBooks()`.
+-   **`LibraryManagementSystem`:**
+    -      The main class that runs the application.
+    -      Contains the `main()` method to interact with the user through a console-based interface.
 
 ## Notes
 
