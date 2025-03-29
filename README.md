@@ -22,7 +22,7 @@ The project consists of three main classes:
     Attributes: `title`, `author`, `isbn`, `isBorrowed`.
     Methods: getters and setters for attributes, `toString()` method.
 -   **`Library`:**
-    -      Manages the collection of `Book` objects.
+    - Manages the collection of `Book` objects.
     -      Attributes: `books` (an `ArrayList` of `Book` objects).
     -      Methods: `addBook()`, `removeBook()`, `searchBook()`, `borrowBook()`, `returnBook()`, `viewAvailableBooks()`.
 -   **`LibraryManagementSystem`:**
