@@ -18,9 +18,9 @@ The Library Management System provides the following functionalities:
 The project consists of three main classes:
 
 -   **`Book`:**
-    -      Represents a single book in the library.
-    -      Attributes: `title`, `author`, `isbn`, `isBorrowed`.
-    -   Methods: getters and setters for attributes, `toString()` method.
+    Represents a single book in the library.
+    Attributes: `title`, `author`, `isbn`, `isBorrowed`.
+    Methods: getters and setters for attributes, `toString()` method.
 -   **`Library`:**
     -      Manages the collection of `Book` objects.
     -      Attributes: `books` (an `ArrayList` of `Book` objects).
